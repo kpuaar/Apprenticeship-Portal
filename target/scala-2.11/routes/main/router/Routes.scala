@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kieran/Applications/Apprenticeship/Apprenticeship-Knowledge-Module-Practice-portal/conf/routes
-// @DATE:Thu Jul 05 09:49:10 BST 2018
+// @SOURCE:/home/kieran/Applications/Apprenticeship/Apprenticeship-Portal/conf/routes
+// @DATE:Thu Jul 05 10:04:25 BST 2018
 
 package router
 
@@ -16,53 +16,41 @@ import _root_.controllers.Assets.Asset
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  HomeController_2: controllers.HomeController,
+  LoginController_3: controllers.LoginController,
+  // @LINE:7
+  CandidatePortalController_4: controllers.CandidatePortalController,
   // @LINE:8
-  CountController_1: controllers.CountController,
-  // @LINE:10
-  AsyncController_4: controllers.AsyncController,
-  // @LINE:13
-  LoginController_6: controllers.LoginController,
-  // @LINE:14
-  CandidatePortalController_7: controllers.CandidatePortalController,
-  // @LINE:15
   ManagerPortalController_0: controllers.ManagerPortalController,
-  // @LINE:16
-  AdminPortalController_3: controllers.AdminPortalController,
-  // @LINE:19
-  ExamController_8: controllers.ExamController,
-  // @LINE:25
-  Assets_5: controllers.Assets,
+  // @LINE:9
+  AdminPortalController_1: controllers.AdminPortalController,
+  // @LINE:12
+  ExamController_5: controllers.ExamController,
+  // @LINE:18
+  Assets_2: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    HomeController_2: controllers.HomeController,
+    LoginController_3: controllers.LoginController,
+    // @LINE:7
+    CandidatePortalController_4: controllers.CandidatePortalController,
     // @LINE:8
-    CountController_1: controllers.CountController,
-    // @LINE:10
-    AsyncController_4: controllers.AsyncController,
-    // @LINE:13
-    LoginController_6: controllers.LoginController,
-    // @LINE:14
-    CandidatePortalController_7: controllers.CandidatePortalController,
-    // @LINE:15
     ManagerPortalController_0: controllers.ManagerPortalController,
-    // @LINE:16
-    AdminPortalController_3: controllers.AdminPortalController,
-    // @LINE:19
-    ExamController_8: controllers.ExamController,
-    // @LINE:25
-    Assets_5: controllers.Assets
-  ) = this(errorHandler, HomeController_2, CountController_1, AsyncController_4, LoginController_6, CandidatePortalController_7, ManagerPortalController_0, AdminPortalController_3, ExamController_8, Assets_5, "/")
+    // @LINE:9
+    AdminPortalController_1: controllers.AdminPortalController,
+    // @LINE:12
+    ExamController_5: controllers.ExamController,
+    // @LINE:18
+    Assets_2: controllers.Assets
+  ) = this(errorHandler, LoginController_3, CandidatePortalController_4, ManagerPortalController_0, AdminPortalController_1, ExamController_5, Assets_2, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_2, CountController_1, AsyncController_4, LoginController_6, CandidatePortalController_7, ManagerPortalController_0, AdminPortalController_3, ExamController_8, Assets_5, prefix)
+    new Routes(errorHandler, LoginController_3, CandidatePortalController_4, ManagerPortalController_0, AdminPortalController_1, ExamController_5, Assets_2, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -70,10 +58,7 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.HomeController.index"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """count""", """controllers.CountController.count"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """message""", """controllers.AsyncController.message"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.LoginController.login"""),
+    ("""GET""", this.prefix, """controllers.LoginController.login"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """candidate""", """controllers.CandidatePortalController.candidate"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """manager""", """controllers.ManagerPortalController.manager"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin""", """controllers.AdminPortalController.admin"""),
@@ -89,62 +74,11 @@ class Routes(
 
 
   // @LINE:6
-  private[this] lazy val controllers_HomeController_index0_route = Route("GET",
+  private[this] lazy val controllers_LoginController_login0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_2.index,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.HomeController",
-      "index",
-      Nil,
-      "GET",
-      """ An example controller showing a sample home page""",
-      this.prefix + """"""
-    )
-  )
-
-  // @LINE:8
-  private[this] lazy val controllers_CountController_count1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("count")))
-  )
-  private[this] lazy val controllers_CountController_count1_invoker = createInvoker(
-    CountController_1.count,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.CountController",
-      "count",
-      Nil,
-      "GET",
-      """ An example controller showing how to use dependency injection""",
-      this.prefix + """count"""
-    )
-  )
-
-  // @LINE:10
-  private[this] lazy val controllers_AsyncController_message2_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("message")))
-  )
-  private[this] lazy val controllers_AsyncController_message2_invoker = createInvoker(
-    AsyncController_4.message,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.AsyncController",
-      "message",
-      Nil,
-      "GET",
-      """ An example controller showing how to write asynchronous code""",
-      this.prefix + """message"""
-    )
-  )
-
-  // @LINE:13
-  private[this] lazy val controllers_LoginController_login3_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
-  )
-  private[this] lazy val controllers_LoginController_login3_invoker = createInvoker(
-    LoginController_6.login,
+  private[this] lazy val controllers_LoginController_login0_invoker = createInvoker(
+    LoginController_3.login,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LoginController",
@@ -152,16 +86,16 @@ class Routes(
       Nil,
       "GET",
       """Portals""",
-      this.prefix + """login"""
+      this.prefix + """"""
     )
   )
 
-  // @LINE:14
-  private[this] lazy val controllers_CandidatePortalController_candidate4_route = Route("GET",
+  // @LINE:7
+  private[this] lazy val controllers_CandidatePortalController_candidate1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("candidate")))
   )
-  private[this] lazy val controllers_CandidatePortalController_candidate4_invoker = createInvoker(
-    CandidatePortalController_7.candidate,
+  private[this] lazy val controllers_CandidatePortalController_candidate1_invoker = createInvoker(
+    CandidatePortalController_4.candidate,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.CandidatePortalController",
@@ -173,11 +107,11 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val controllers_ManagerPortalController_manager5_route = Route("GET",
+  // @LINE:8
+  private[this] lazy val controllers_ManagerPortalController_manager2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("manager")))
   )
-  private[this] lazy val controllers_ManagerPortalController_manager5_invoker = createInvoker(
+  private[this] lazy val controllers_ManagerPortalController_manager2_invoker = createInvoker(
     ManagerPortalController_0.manager,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -190,12 +124,12 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_AdminPortalController_admin6_route = Route("GET",
+  // @LINE:9
+  private[this] lazy val controllers_AdminPortalController_admin3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin")))
   )
-  private[this] lazy val controllers_AdminPortalController_admin6_invoker = createInvoker(
-    AdminPortalController_3.admin,
+  private[this] lazy val controllers_AdminPortalController_admin3_invoker = createInvoker(
+    AdminPortalController_1.admin,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.AdminPortalController",
@@ -207,12 +141,12 @@ class Routes(
     )
   )
 
-  // @LINE:19
-  private[this] lazy val controllers_ExamController_exam7_route = Route("GET",
+  // @LINE:12
+  private[this] lazy val controllers_ExamController_exam4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("exam")))
   )
-  private[this] lazy val controllers_ExamController_exam7_invoker = createInvoker(
-    ExamController_8.exam,
+  private[this] lazy val controllers_ExamController_exam4_invoker = createInvoker(
+    ExamController_5.exam,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ExamController",
@@ -224,12 +158,12 @@ class Routes(
     )
   )
 
-  // @LINE:20
-  private[this] lazy val controllers_ExamController_createExam8_route = Route("GET",
+  // @LINE:13
+  private[this] lazy val controllers_ExamController_createExam5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("create-exam")))
   )
-  private[this] lazy val controllers_ExamController_createExam8_invoker = createInvoker(
-    ExamController_8.createExam,
+  private[this] lazy val controllers_ExamController_createExam5_invoker = createInvoker(
+    ExamController_5.createExam,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ExamController",
@@ -241,12 +175,12 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_ExamController_report9_route = Route("GET",
+  // @LINE:14
+  private[this] lazy val controllers_ExamController_report6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("report")))
   )
-  private[this] lazy val controllers_ExamController_report9_invoker = createInvoker(
-    ExamController_8.report,
+  private[this] lazy val controllers_ExamController_report6_invoker = createInvoker(
+    ExamController_5.report,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ExamController",
@@ -258,12 +192,12 @@ class Routes(
     )
   )
 
-  // @LINE:25
-  private[this] lazy val controllers_Assets_versioned10_route = Route("GET",
+  // @LINE:18
+  private[this] lazy val controllers_Assets_versioned7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned10_invoker = createInvoker(
-    Assets_5.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned7_invoker = createInvoker(
+    Assets_2.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -279,69 +213,51 @@ class Routes(
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:6
-    case controllers_HomeController_index0_route(params) =>
+    case controllers_LoginController_login0_route(params) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_2.index)
+        controllers_LoginController_login0_invoker.call(LoginController_3.login)
+      }
+  
+    // @LINE:7
+    case controllers_CandidatePortalController_candidate1_route(params) =>
+      call { 
+        controllers_CandidatePortalController_candidate1_invoker.call(CandidatePortalController_4.candidate)
       }
   
     // @LINE:8
-    case controllers_CountController_count1_route(params) =>
+    case controllers_ManagerPortalController_manager2_route(params) =>
       call { 
-        controllers_CountController_count1_invoker.call(CountController_1.count)
+        controllers_ManagerPortalController_manager2_invoker.call(ManagerPortalController_0.manager)
       }
   
-    // @LINE:10
-    case controllers_AsyncController_message2_route(params) =>
+    // @LINE:9
+    case controllers_AdminPortalController_admin3_route(params) =>
       call { 
-        controllers_AsyncController_message2_invoker.call(AsyncController_4.message)
+        controllers_AdminPortalController_admin3_invoker.call(AdminPortalController_1.admin)
+      }
+  
+    // @LINE:12
+    case controllers_ExamController_exam4_route(params) =>
+      call { 
+        controllers_ExamController_exam4_invoker.call(ExamController_5.exam)
       }
   
     // @LINE:13
-    case controllers_LoginController_login3_route(params) =>
+    case controllers_ExamController_createExam5_route(params) =>
       call { 
-        controllers_LoginController_login3_invoker.call(LoginController_6.login)
+        controllers_ExamController_createExam5_invoker.call(ExamController_5.createExam)
       }
   
     // @LINE:14
-    case controllers_CandidatePortalController_candidate4_route(params) =>
+    case controllers_ExamController_report6_route(params) =>
       call { 
-        controllers_CandidatePortalController_candidate4_invoker.call(CandidatePortalController_7.candidate)
+        controllers_ExamController_report6_invoker.call(ExamController_5.report)
       }
   
-    // @LINE:15
-    case controllers_ManagerPortalController_manager5_route(params) =>
-      call { 
-        controllers_ManagerPortalController_manager5_invoker.call(ManagerPortalController_0.manager)
-      }
-  
-    // @LINE:16
-    case controllers_AdminPortalController_admin6_route(params) =>
-      call { 
-        controllers_AdminPortalController_admin6_invoker.call(AdminPortalController_3.admin)
-      }
-  
-    // @LINE:19
-    case controllers_ExamController_exam7_route(params) =>
-      call { 
-        controllers_ExamController_exam7_invoker.call(ExamController_8.exam)
-      }
-  
-    // @LINE:20
-    case controllers_ExamController_createExam8_route(params) =>
-      call { 
-        controllers_ExamController_createExam8_invoker.call(ExamController_8.createExam)
-      }
-  
-    // @LINE:21
-    case controllers_ExamController_report9_route(params) =>
-      call { 
-        controllers_ExamController_report9_invoker.call(ExamController_8.report)
-      }
-  
-    // @LINE:25
-    case controllers_Assets_versioned10_route(params) =>
+    // @LINE:18
+    case controllers_Assets_versioned7_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned10_invoker.call(Assets_5.versioned(path, file))
+        controllers_Assets_versioned7_invoker.call(Assets_2.versioned(path, file))
       }
   }
 }

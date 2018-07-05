@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kieran/Applications/Apprenticeship/Apprenticeship-Knowledge-Module-Practice-portal/conf/routes
-// @DATE:Thu Jul 05 09:49:10 BST 2018
+// @SOURCE:/home/kieran/Applications/Apprenticeship/Apprenticeship-Portal/conf/routes
+// @DATE:Thu Jul 05 10:04:25 BST 2018
 
 
 package router {

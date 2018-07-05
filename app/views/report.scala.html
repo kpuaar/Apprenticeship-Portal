@@ -1,21 +1,23 @@
 @(message: String, style: String = "scala")
 
+<link rel="stylesheet" media="screen" href="/@@documentation/resources/style/main.css">
+
 <section id="top">
     <div class="wrapper">
-        <img src="images/Capgemini-Logo.png" width="200" height="100">
-
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">capgemini logo</a>
-                    <img src="images/Capgemini-Logo.png" width="200" height="100">
+                    <a class="navbar-brand" href="@controllers.routes.CandidatePortalController.candidate">
+                        <img id="logo" width="400" height="90" src="@routes.Assets.versioned(" images/Capgemini-Logo.png")">
+                    </a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="managerPortal.scala.html">Home</a></li>
-                    <li><a href="classes.scala.html">Classes</a></li>
-                    <li class="active"><a href="tests.scala.html">Tests</a></li>
-                    <li><a href="login.scala.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    <li><a href="@controllers.routes.ManagerController.manager">Home</a></li>
+                    <li><a href="@controllers.routes.ManagerController.classes">Classes</a></li>
+                    <li class="active"><a href="@controllers.routes.ExamController.exam">Tests</a></li>
+                    <li><a href="@controllers.routes.LoginController.login">
+                        <span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
                 </ul>
             </div>
         </nav>
@@ -243,14 +245,6 @@
         </form>
 
         <button>Return to Homepage</button>
-
-        <pre><code>@@(message: String)
-
-@@main("Welcome to Play") {
-
-    @@welcome(message, style = "scala")
-
-}</code></pre>
 
     </article>
 

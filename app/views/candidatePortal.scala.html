@@ -8,14 +8,16 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">capgemini logo</a>
-                    <img id="logo" width="400" height="90" src="@routes.Assets.versioned("images/Capgemini-Logo.png")">
+                    <a class="navbar-brand" href="@controllers.routes.CandidatePortalController.candidate">
+                        <img id="logo" width="400" height="90" src="@routes.Assets.versioned(" images/Capgemini-Logo.png")">
+                    </a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="candidatePortal.scala.html">Home</a></li>
-                    <li><a href="tests.scala.html">Tests</a></li>
-                    <li><a href="@controllers.routes.LoginController.login"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+                    <li class="active"><a href="@controllers.routes.CandidatePortalController.candidate">Home</a></li>
+                    <li><a href="@controllers.routes.ExamController.exam">Tests</a></li>
+                    <li><a href="@controllers.routes.LoginController.login">
+                        <span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,7 +46,11 @@
                 <td>1/6/2018</td>
                 <td>5/6/2018</td>
                 <td>15/20</td>
-                <td><button class="examButton">See Report</button></td>
+                <td>
+                    <button class="examButton">
+                        <a href="@controllers.routes.ExamController.report">See Report</a>
+                    </button>
+                </td>
             </tr>
             <tr>
                 <td>KM102</td>
@@ -52,7 +58,11 @@
                 <td>6/6/2018</td>
                 <td></td>
                 <td></td>
-                <td><button class="examButton">Take the Exam</button></td>
+                <td>
+                    <button class="examButton">
+                        <a href="@controllers.routes.ExamController.exam">Take Exam</a>
+                    </button>
+                </td>
             </tr>
             <tr>
                 <td>KM103</td>
@@ -60,7 +70,11 @@
                 <td>2/7/2018</td>
                 <td></td>
                 <td></td>
-                <td><button class="examButton">Take the Exam</button></td>
+                <td>
+                    <button class="examButton">
+                        <a href="@controllers.routes.ExamController.exam">Take Exam</a>
+                    </button>
+                </td>
             </tr>
         </table>
 

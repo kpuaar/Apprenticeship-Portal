@@ -1,0 +1,4 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/kieran/Applications/Apprenticeship/Apprenticeship-Knowledge-Module-Practice-portal/conf/application.conf,/home/kieran/Applications/Apprenticeship/Apprenticeship-Knowledge-Module-Practice-portal/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/kieran/Applications/Apprenticeship/Apprenticeship-Knowledge-Module-Practice-portal/conf/routes,/home/kieran/Applications/Apprenticeship/Apprenticeship-Knowledge-Module-Practice-portal/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/kieran/Applications/Apprenticeship/Apprenticeship-Knowledge-Module-Practice-portal/conf/logback.xml,/home/kieran/Applications/Apprenticeship/Apprenticeship-Knowledge-Module-Practice-portal/target/scala-2.11/classes/logback.xml)[0m

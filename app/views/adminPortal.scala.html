@@ -1,0 +1,84 @@
+@(message: String, style: String = "scala")
+
+<section id="top">
+    <div class="wrapper">
+        <img src="images/Capgemini-Logo.png" width="200" height="100">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">capgemini logo</a>
+                    <img src="images/Capgemini-Logo.png" width="200" height="100">
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="adminPortal.scala.html">Home</a></li>
+                    <li><a href="exams.scala.html">Exams</a></li>
+                    <li><a href="users.scala.html">Users</a></li>
+                    <li><a href="login.scala.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+</section>
+
+<div id="content" class="wrapper doc">
+    <article>
+
+        <h1>Welcome Kieran Puaar</h1>
+
+        <table style="width:100%">
+            <h3>101</h3>
+            <tr>
+                <th>ID</th>
+                <th>Exam Name</th>
+                <th>Manager</th>
+            </tr>
+            <tr>
+                <td>KM101</td>
+                <td>Knowledge Module 1</td>
+                <td>Kieran Puaar</td>
+                <td><button class="assignButton">Assign</button></td>
+                <td><button class="editButton">Edit</button></td>
+                <td><button class="removeButton">Remove</button></td>
+            </tr>
+            <tr>
+                <td>KM1012</td>
+                <td>Knowledge Module 1</td>
+                <td>John Smith</td>
+                <td><button class="assignButton">Assign</button></td>
+                <td><button class="editButton">Edit</button></td>
+                <td><button class="removeButton">Remove</button></td>
+            </tr>
+            <td><button class="addExamButton">Add Exam</button></td>
+        </table>
+
+        <table style="width:100%">
+            <h3>102</h3>
+            <tr>
+                <th>ID</th>
+                <th>Exam Name</th>
+                <th>Manager</th>
+            </tr>
+            <tr>
+                <td>KM101</td>
+                <td>Knowledge Module 2</td>
+                <td>Kieran Puaar</td>
+                <td><button class="assignButton">Assign</button></td>
+                <td><button class="editButton">Edit</button></td>
+                <td><button class="removeButton">Remove</button></td>
+            </tr>
+            <td><button class="addExamButton">Add Exam</button></td>
+        </table>
+        <pre><code>@@(message: String)
+
+@@admin("Welcome to Play") {
+
+    @@welcome(message, style = "scala")
+
+}</code></pre>
+
+    </article>
+
+</div>

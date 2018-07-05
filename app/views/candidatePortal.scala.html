@@ -1,0 +1,71 @@
+@(message: String, style: String = "scala")
+
+<link rel="stylesheet" media="screen" href="/@@documentation/resources/style/main.css">
+
+<section id="top">
+
+    <div class="wrapper">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">capgemini logo</a>
+                    <img id="logo" width="400" height="90" src="@routes.Assets.versioned("images/Capgemini-Logo.png")">
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="candidatePortal.scala.html">Home</a></li>
+                    <li><a href="tests.scala.html">Tests</a></li>
+                    <li><a href="@controllers.routes.LoginController.login"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+</section>
+
+<div id="content" class="wrapper doc">
+    <article>
+
+        <h1>Welcome Kieran Puaar</h1>
+
+
+        <table style="width:100%">
+            <tr>
+                <th>ID</th>
+                <th>Exam Name</th>
+                <th>Due Date</th>
+                <th>Completion Date</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>KM101</td>
+                <td>Knowledge Module 1</td>
+                <td>1/6/2018</td>
+                <td>5/6/2018</td>
+                <td>15/20</td>
+                <td><button class="examButton">See Report</button></td>
+            </tr>
+            <tr>
+                <td>KM102</td>
+                <td>Knowledge Module 2</td>
+                <td>6/6/2018</td>
+                <td></td>
+                <td></td>
+                <td><button class="examButton">Take the Exam</button></td>
+            </tr>
+            <tr>
+                <td>KM103</td>
+                <td>Knowledge Module 3</td>
+                <td>2/7/2018</td>
+                <td></td>
+                <td></td>
+                <td><button class="examButton">Take the Exam</button></td>
+            </tr>
+        </table>
+
+
+    </article>
+
+</div>
+

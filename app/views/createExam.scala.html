@@ -1,0 +1,64 @@
+@(message: String, style: String = "scala")
+
+<section id="top">
+    <div class="wrapper">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">capgemini logo</a>
+                    <img src="images/Capgemini-Logo.png" width="200" height="100">
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="exams.scala.html">Exams</a></li>
+                    <li><a href="users.scala.html">Users</a></li>
+                    <li><a href="login.scala.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<div id="content" class="wrapper doc">
+    <article>
+
+        <table style="width:100%">
+            <tr>
+                <th>ID</th>
+                <th>Exam Name</th>
+                <th>Pass mark</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td><textarea></textarea></td>
+            </tr>
+        </table>
+
+        <h2>Question 1</h2>
+        <h3><textarea></textarea></h3>
+        <p>Options</p>
+        <form>
+            <input type="radio" name="answer" value="answer1"><textarea></textarea><br>
+            <input type="radio" name="answer" value="answer2"><textarea></textarea><br>
+            <input type="radio" name="answer" value="answer3"><textarea></textarea><br>
+            <input type="radio" name="answer" value="answer4"><textarea></textarea><br>
+        </form>
+
+        <button>Add Question</button>
+
+        <button>Save</button>
+        <button>Publish</button>
+
+        <pre><code>@@(message: String)
+
+@@main("Welcome to Play") {
+
+    @@welcome(message, style = "scala")
+
+}</code></pre>
+
+    </article>
+
+</div>

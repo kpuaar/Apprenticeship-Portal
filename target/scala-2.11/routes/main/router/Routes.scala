@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kieran/Applications/Apprenticeship/Apprenticeship-Portal/conf/routes
-// @DATE:Thu Jul 05 10:04:25 BST 2018
+// @SOURCE:/Users/Kieran/Documents/Programming/Apprenticeship-Portal/conf/routes
+// @DATE:Mon Jul 09 20:54:34 BST 2018
 
 package router
 
@@ -15,34 +15,34 @@ import _root_.controllers.Assets.Asset
 
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
-  // @LINE:6
+  // @LINE:4
   LoginController_3: controllers.LoginController,
-  // @LINE:7
+  // @LINE:5
   CandidatePortalController_4: controllers.CandidatePortalController,
-  // @LINE:8
+  // @LINE:6
   ManagerPortalController_0: controllers.ManagerPortalController,
-  // @LINE:9
+  // @LINE:7
   AdminPortalController_1: controllers.AdminPortalController,
-  // @LINE:12
+  // @LINE:10
   ExamController_5: controllers.ExamController,
-  // @LINE:18
+  // @LINE:16
   Assets_2: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
-    // @LINE:6
+    // @LINE:4
     LoginController_3: controllers.LoginController,
-    // @LINE:7
+    // @LINE:5
     CandidatePortalController_4: controllers.CandidatePortalController,
-    // @LINE:8
+    // @LINE:6
     ManagerPortalController_0: controllers.ManagerPortalController,
-    // @LINE:9
+    // @LINE:7
     AdminPortalController_1: controllers.AdminPortalController,
-    // @LINE:12
+    // @LINE:10
     ExamController_5: controllers.ExamController,
-    // @LINE:18
+    // @LINE:16
     Assets_2: controllers.Assets
   ) = this(errorHandler, LoginController_3, CandidatePortalController_4, ManagerPortalController_0, AdminPortalController_1, ExamController_5, Assets_2, "/")
 
@@ -73,7 +73,7 @@ class Routes(
   }}
 
 
-  // @LINE:6
+  // @LINE:4
   private[this] lazy val controllers_LoginController_login0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
@@ -90,7 +90,7 @@ class Routes(
     )
   )
 
-  // @LINE:7
+  // @LINE:5
   private[this] lazy val controllers_CandidatePortalController_candidate1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("candidate")))
   )
@@ -107,7 +107,7 @@ class Routes(
     )
   )
 
-  // @LINE:8
+  // @LINE:6
   private[this] lazy val controllers_ManagerPortalController_manager2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("manager")))
   )
@@ -124,7 +124,7 @@ class Routes(
     )
   )
 
-  // @LINE:9
+  // @LINE:7
   private[this] lazy val controllers_AdminPortalController_admin3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin")))
   )
@@ -141,7 +141,7 @@ class Routes(
     )
   )
 
-  // @LINE:12
+  // @LINE:10
   private[this] lazy val controllers_ExamController_exam4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("exam")))
   )
@@ -158,7 +158,7 @@ class Routes(
     )
   )
 
-  // @LINE:13
+  // @LINE:11
   private[this] lazy val controllers_ExamController_createExam5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("create-exam")))
   )
@@ -175,7 +175,7 @@ class Routes(
     )
   )
 
-  // @LINE:14
+  // @LINE:12
   private[this] lazy val controllers_ExamController_report6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("report")))
   )
@@ -192,7 +192,7 @@ class Routes(
     )
   )
 
-  // @LINE:18
+  // @LINE:16
   private[this] lazy val controllers_Assets_versioned7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -212,49 +212,49 @@ class Routes(
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
-    // @LINE:6
+    // @LINE:4
     case controllers_LoginController_login0_route(params) =>
       call { 
         controllers_LoginController_login0_invoker.call(LoginController_3.login)
       }
   
-    // @LINE:7
+    // @LINE:5
     case controllers_CandidatePortalController_candidate1_route(params) =>
       call { 
         controllers_CandidatePortalController_candidate1_invoker.call(CandidatePortalController_4.candidate)
       }
   
-    // @LINE:8
+    // @LINE:6
     case controllers_ManagerPortalController_manager2_route(params) =>
       call { 
         controllers_ManagerPortalController_manager2_invoker.call(ManagerPortalController_0.manager)
       }
   
-    // @LINE:9
+    // @LINE:7
     case controllers_AdminPortalController_admin3_route(params) =>
       call { 
         controllers_AdminPortalController_admin3_invoker.call(AdminPortalController_1.admin)
       }
   
-    // @LINE:12
+    // @LINE:10
     case controllers_ExamController_exam4_route(params) =>
       call { 
         controllers_ExamController_exam4_invoker.call(ExamController_5.exam)
       }
   
-    // @LINE:13
+    // @LINE:11
     case controllers_ExamController_createExam5_route(params) =>
       call { 
         controllers_ExamController_createExam5_invoker.call(ExamController_5.createExam)
       }
   
-    // @LINE:14
+    // @LINE:12
     case controllers_ExamController_report6_route(params) =>
       call { 
         controllers_ExamController_report6_invoker.call(ExamController_5.report)
       }
   
-    // @LINE:18
+    // @LINE:16
     case controllers_Assets_versioned7_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned7_invoker.call(Assets_2.versioned(path, file))

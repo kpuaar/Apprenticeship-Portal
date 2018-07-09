@@ -8,7 +8,7 @@ import play.api.mvc._
 class LoginController @Inject() extends Controller {
 
   def login = Action {
-    Ok(views.html.index(""))
+    Ok(views.html.login(""))
   }
 
 }

@@ -23,21 +23,24 @@ class createExam extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,
 
 
 Seq[Any](format.raw/*1.44*/("""
+"""),_display_(/*2.2*/main("Create Exam | Apprenticeship Portal")/*2.45*/ {_display_(Seq[Any](format.raw/*2.47*/("""
 
-"""),format.raw/*3.1*/("""<section id="top">
+"""),format.raw/*4.1*/("""<link rel="stylesheet" media="screen" href="/@documentation/resources/style/main.css">
+
+<section id="top">
     <div class="wrapper">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">capgemini logo</a>
-                    <img src="images/Capgemini-Logo.png" width="200" height="100">
+                    <a class="navbar-brand" href=""""),_display_(/*11.52*/controllers/*11.63*/.routes.CandidatePortalController.candidate),format.raw/*11.106*/("""">
+                        <img id="logo" width="400" height="90" src=""""),_display_(/*12.70*/routes/*12.76*/.Assets.versioned("images/Capgemini-Logo.png")),format.raw/*12.122*/("""">
+                    </a>
                 </div>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="exams.scala.html">Exams</a></li>
-                    <li><a href="users.scala.html">Users</a></li>
-                    <li><a href="login.scala.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    <a href=""""),_display_(/*15.31*/controllers/*15.42*/.routes.AdminPortalController.admin),format.raw/*15.77*/("""">Home</a></li>
+                    <li class="active"><a href=""""),_display_(/*16.50*/controllers/*16.61*/.routes.ExamController.exam),format.raw/*16.88*/("""">Tests</a></li>
+                    <li><a href="">Users</a></li>
+                    <li><a href=""""),_display_(/*18.35*/controllers/*18.46*/.routes.LoginController.login),format.raw/*18.75*/("""">
+                        <span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
                 </ul>
             </div>
         </nav>
@@ -75,17 +78,11 @@ Seq[Any](format.raw/*1.44*/("""
         <button>Save</button>
         <button>Publish</button>
 
-        <pre><code>@(message: String)
-
-@main("Welcome to Play") """),format.raw/*56.27*/("""{"""),format.raw/*56.28*/("""
-
-    """),format.raw/*58.5*/("""@welcome(message, style = "scala")
-
-"""),format.raw/*60.1*/("""}"""),format.raw/*60.2*/("""</code></pre>
 
     </article>
 
-</div>"""))
+</div>
+""")))}))
       }
     }
   }
@@ -105,11 +102,11 @@ Seq[Any](format.raw/*1.44*/("""
 object createExam extends createExam_Scope0.createExam
               /*
                   -- GENERATED --
-                  DATE: Thu Jul 05 09:42:12 BST 2018
-                  SOURCE: /home/kieran/Applications/Apprenticeship/play-scala-starter-example-2.5.x/app/views/createExam.scala.html
-                  HASH: 6909668981762605c14575e317cdd8895934ff73
-                  MATRIX: 544->1|681->43|709->45|2578->1888|2607->1889|2640->1895|2703->1932|2731->1933
-                  LINES: 20->1|25->1|27->3|80->56|80->56|82->58|84->60|84->60
+                  DATE: Mon Jul 09 21:15:23 BST 2018
+                  SOURCE: /Users/Kieran/Documents/Programming/Apprenticeship-Portal/app/views/createExam.scala.html
+                  HASH: 7aa45a007b3c94167a2924027b7c9022540ee8f3
+                  MATRIX: 544->1|681->43|708->45|759->88|798->90|826->92|1167->407|1187->418|1252->461|1351->533|1366->539|1434->585|1542->666|1562->677|1618->712|1710->777|1730->788|1778->815|1906->916|1926->927|1976->956
+                  LINES: 20->1|25->1|26->2|26->2|26->2|28->4|35->11|35->11|35->11|36->12|36->12|36->12|39->15|39->15|39->15|40->16|40->16|40->16|42->18|42->18|42->18
                   -- GENERATED --
               */
           

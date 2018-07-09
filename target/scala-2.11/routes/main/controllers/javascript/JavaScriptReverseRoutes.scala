@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kieran/Applications/Apprenticeship/Apprenticeship-Portal/conf/routes
-// @DATE:Thu Jul 05 10:04:25 BST 2018
+// @SOURCE:/Users/Kieran/Documents/Programming/Apprenticeship-Portal/conf/routes
+// @DATE:Mon Jul 09 20:54:34 BST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -10,11 +10,11 @@ import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamic
 
 import _root_.controllers.Assets.Asset
 
-// @LINE:6
+// @LINE:4
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:18
+  // @LINE:16
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -22,7 +22,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:18
+    // @LINE:16
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -34,7 +34,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:7
+  // @LINE:5
   class ReverseCandidatePortalController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -42,7 +42,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:7
+    // @LINE:5
     def candidate: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CandidatePortalController.candidate",
       """
@@ -54,7 +54,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:8
+  // @LINE:6
   class ReverseManagerPortalController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -62,7 +62,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:8
+    // @LINE:6
     def manager: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ManagerPortalController.manager",
       """
@@ -74,7 +74,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:12
+  // @LINE:10
   class ReverseExamController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -82,7 +82,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:11
     def createExam: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExamController.createExam",
       """
@@ -92,7 +92,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
+    // @LINE:12
     def report: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExamController.report",
       """
@@ -102,7 +102,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:10
     def exam: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExamController.exam",
       """
@@ -114,7 +114,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:6
+  // @LINE:4
   class ReverseLoginController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -122,7 +122,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:6
+    // @LINE:4
     def login: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LoginController.login",
       """
@@ -134,7 +134,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:9
+  // @LINE:7
   class ReverseAdminPortalController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -142,7 +142,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:9
+    // @LINE:7
     def admin: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AdminPortalController.admin",
       """

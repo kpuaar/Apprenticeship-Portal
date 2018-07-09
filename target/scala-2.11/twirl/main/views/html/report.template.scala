@@ -23,23 +23,26 @@ class report extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Form
 
 
 Seq[Any](format.raw/*1.44*/("""
+"""),_display_(/*2.2*/main("Report | Apprenticeship Portal")/*2.40*/ {_display_(Seq[Any](format.raw/*2.42*/("""
 
-"""),format.raw/*3.1*/("""<section id="top">
+"""),format.raw/*4.1*/("""<link rel="stylesheet" media="screen" href="/@documentation/resources/style/main.css">
+
+<section id="top">
     <div class="wrapper">
-        <img src="images/Capgemini-Logo.png" width="200" height="100">
-
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">capgemini logo</a>
-                    <img src="images/Capgemini-Logo.png" width="200" height="100">
+                    <a class="navbar-brand" href=""""),_display_(/*11.52*/controllers/*11.63*/.routes.CandidatePortalController.candidate),format.raw/*11.106*/("""">
+                        <img id="logo" width="400" height="90" src=""""),_display_(/*12.70*/routes/*12.76*/.Assets.versioned("images/Capgemini-Logo.png")),format.raw/*12.122*/("""">
+                    </a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="managerPortal.scala.html">Home</a></li>
-                    <li><a href="classes.scala.html">Classes</a></li>
-                    <li class="active"><a href="tests.scala.html">Tests</a></li>
-                    <li><a href="login.scala.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    <li><a href=""""),_display_(/*17.35*/controllers/*17.46*/.routes.CandidatePortalController.candidate),format.raw/*17.89*/("""">Home</a></li>
+                    <li><a href="">Classes</a></li>
+                    <li class="active"><a href=""""),_display_(/*19.50*/controllers/*19.61*/.routes.ExamController.exam),format.raw/*19.88*/("""">Tests</a></li>
+                    <li><a href=""""),_display_(/*20.35*/controllers/*20.46*/.routes.LoginController.login),format.raw/*20.75*/("""">
+                        <span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
                 </ul>
             </div>
         </nav>
@@ -268,17 +271,10 @@ Seq[Any](format.raw/*1.44*/("""
 
         <button>Return to Homepage</button>
 
-        <pre><code>@(message: String)
-
-@main("Welcome to Play") """),format.raw/*249.27*/("""{"""),format.raw/*249.28*/("""
-
-    """),format.raw/*251.5*/("""@welcome(message, style = "scala")
-
-"""),format.raw/*253.1*/("""}"""),format.raw/*253.2*/("""</code></pre>
-
     </article>
 
-</div>"""))
+</div>
+""")))}))
       }
     }
   }
@@ -298,11 +294,11 @@ Seq[Any](format.raw/*1.44*/("""
 object report extends report_Scope0.report
               /*
                   -- GENERATED --
-                  DATE: Thu Jul 05 09:42:12 BST 2018
-                  SOURCE: /home/kieran/Applications/Apprenticeship/play-scala-starter-example-2.5.x/app/views/report.scala.html
-                  HASH: 44016bf1f56869b4288ccdd825a662733f6b4e00
-                  MATRIX: 536->1|673->43|701->45|10853->10170|10883->10171|10917->10177|10981->10214|11010->10215
-                  LINES: 20->1|25->1|27->3|273->249|273->249|275->251|277->253|277->253
+                  DATE: Mon Jul 09 21:15:23 BST 2018
+                  SOURCE: /Users/Kieran/Documents/Programming/Apprenticeship-Portal/app/views/report.scala.html
+                  HASH: 362b5fedd819454d94033bd421b409e3682606e0
+                  MATRIX: 536->1|673->43|700->45|746->83|785->85|813->87|1154->402|1174->413|1239->456|1338->528|1353->534|1421->580|1591->723|1611->734|1675->777|1819->894|1839->905|1887->932|1965->983|1985->994|2035->1023
+                  LINES: 20->1|25->1|26->2|26->2|26->2|28->4|35->11|35->11|35->11|36->12|36->12|36->12|41->17|41->17|41->17|43->19|43->19|43->19|44->20|44->20|44->20
                   -- GENERATED --
               */
           

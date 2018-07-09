@@ -23,27 +23,29 @@ class adminPortal extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable
 
 
 Seq[Any](format.raw/*1.44*/("""
+"""),_display_(/*2.2*/main("Admin Portal | Apprenticeship Portal")/*2.46*/ {_display_(Seq[Any](format.raw/*2.48*/("""
 
-"""),format.raw/*3.1*/("""<section id="top">
+"""),format.raw/*4.1*/("""<link rel="stylesheet" media="screen" href="/@documentation/resources/style/main.css">
+
+<section id="top">
     <div class="wrapper">
-        <img src="images/Capgemini-Logo.png" width="200" height="100">
-
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">capgemini logo</a>
-                    <img src="images/Capgemini-Logo.png" width="200" height="100">
+                    <a class="navbar-brand" href=""""),_display_(/*11.52*/controllers/*11.63*/.routes.AdminPortalController.admin),format.raw/*11.98*/("""">
+                        <img id="logo" width="400" height="90" src=""""),_display_(/*12.70*/routes/*12.76*/.Assets.versioned("images/Capgemini-Logo.png")),format.raw/*12.122*/("""">
+                    </a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="adminPortal.scala.html">Home</a></li>
-                    <li><a href="exams.scala.html">Exams</a></li>
-                    <li><a href="users.scala.html">Users</a></li>
-                    <li><a href="login.scala.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    <li class="active"><a href=""""),_display_(/*17.50*/controllers/*17.61*/.routes.AdminPortalController.admin),format.raw/*17.96*/("""">Home</a></li>
+                    <li><a href=""""),_display_(/*18.35*/controllers/*18.46*/.routes.ExamController.exam),format.raw/*18.73*/("""">Tests</a></li>
+                    <li><a href="">Users</a></li>
+                    <li><a href=""""),_display_(/*20.35*/controllers/*20.46*/.routes.LoginController.login),format.raw/*20.75*/("""">
+                        <span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
                 </ul>
             </div>
         </nav>
-
     </div>
 </section>
 
@@ -95,17 +97,11 @@ Seq[Any](format.raw/*1.44*/("""
             </tr>
             <td><button class="addExamButton">Add Exam</button></td>
         </table>
-        <pre><code>@(message: String)
-
-@admin("Welcome to Play") """),format.raw/*76.28*/("""{"""),format.raw/*76.29*/("""
-
-    """),format.raw/*78.5*/("""@welcome(message, style = "scala")
-
-"""),format.raw/*80.1*/("""}"""),format.raw/*80.2*/("""</code></pre>
 
     </article>
 
-</div>"""))
+</div>
+""")))}))
       }
     }
   }
@@ -125,11 +121,11 @@ Seq[Any](format.raw/*1.44*/("""
 object adminPortal extends adminPortal_Scope0.adminPortal
               /*
                   -- GENERATED --
-                  DATE: Thu Jul 05 09:42:12 BST 2018
-                  SOURCE: /home/kieran/Applications/Apprenticeship/play-scala-starter-example-2.5.x/app/views/adminPortal.scala.html
-                  HASH: 1c5ed1b33ea22cc4a13f5918bb6451cdb053aa20
-                  MATRIX: 546->1|683->43|711->45|3412->2720|3441->2721|3474->2727|3537->2764|3565->2765
-                  LINES: 20->1|25->1|27->3|100->76|100->76|102->78|104->80|104->80
+                  DATE: Mon Jul 09 21:15:23 BST 2018
+                  SOURCE: /Users/Kieran/Documents/Programming/Apprenticeship-Portal/app/views/adminPortal.scala.html
+                  HASH: 594c646534a2a225952a5e63434aff8a3fa6cbc7
+                  MATRIX: 546->1|683->43|710->45|762->89|801->91|829->93|1170->408|1190->419|1246->454|1345->526|1360->532|1428->578|1613->736|1633->747|1689->782|1766->832|1786->843|1834->870|1962->971|1982->982|2032->1011
+                  LINES: 20->1|25->1|26->2|26->2|26->2|28->4|35->11|35->11|35->11|36->12|36->12|36->12|41->17|41->17|41->17|42->18|42->18|42->18|44->20|44->20|44->20
                   -- GENERATED --
               */
           

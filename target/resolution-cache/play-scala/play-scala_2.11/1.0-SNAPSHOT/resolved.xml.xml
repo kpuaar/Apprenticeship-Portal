@@ -4,7 +4,7 @@
 		module="play-scala_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20180705095351"
+		publication="20180709205434"
 	>
 		<description>
 		play-scala

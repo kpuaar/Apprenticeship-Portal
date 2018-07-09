@@ -23,8 +23,9 @@ class candidatePortal extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Append
 
 
 Seq[Any](format.raw/*1.44*/("""
+"""),_display_(/*2.2*/main("Candidate Portal | Apprenticeship Portal")/*2.50*/ {_display_(Seq[Any](format.raw/*2.52*/("""
 
-"""),format.raw/*3.1*/("""<link rel="stylesheet" media="screen" href="/@documentation/resources/style/main.css">
+"""),format.raw/*4.1*/("""<link rel="stylesheet" media="screen" href="/@documentation/resources/style/main.css">
 
 <section id="top">
 
@@ -32,14 +33,16 @@ Seq[Any](format.raw/*1.44*/("""
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">capgemini logo</a>
-                    <img id="logo" width="400" height="90" src=""""),_display_(/*12.66*/routes/*12.72*/.Assets.versioned("images/Capgemini-Logo.png")),format.raw/*12.118*/("""">
+                    <a class="navbar-brand" href=""""),_display_(/*12.52*/controllers/*12.63*/.routes.CandidatePortalController.candidate),format.raw/*12.106*/("""">
+                        <img id="logo" width="400" height="90" src=""""),_display_(/*13.70*/routes/*13.76*/.Assets.versioned("images/Capgemini-Logo.png")),format.raw/*13.122*/("""">
+                    </a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="candidatePortal.scala.html">Home</a></li>
-                    <li><a href="tests.scala.html">Tests</a></li>
-                    <li><a href=""""),_display_(/*18.35*/controllers/*18.46*/.routes.LoginController.login),format.raw/*18.75*/(""""><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+                    <li class="active"><a href=""""),_display_(/*18.50*/controllers/*18.61*/.routes.CandidatePortalController.candidate),format.raw/*18.104*/("""">Home</a></li>
+                    <li><a href=""""),_display_(/*19.35*/controllers/*19.46*/.routes.ExamController.exam),format.raw/*19.73*/("""">Tests</a></li>
+                    <li><a href=""""),_display_(/*20.35*/controllers/*20.46*/.routes.LoginController.login),format.raw/*20.75*/("""">
+                        <span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
                 </ul>
             </div>
         </nav>
@@ -68,7 +71,11 @@ Seq[Any](format.raw/*1.44*/("""
                 <td>1/6/2018</td>
                 <td>5/6/2018</td>
                 <td>15/20</td>
-                <td><button class="examButton">See Report</button></td>
+                <td>
+                    <button class="examButton">
+                        <a href=""""),_display_(/*52.35*/controllers/*52.46*/.routes.ExamController.report),format.raw/*52.75*/("""">See Report</a>
+                    </button>
+                </td>
             </tr>
             <tr>
                 <td>KM102</td>
@@ -76,7 +83,11 @@ Seq[Any](format.raw/*1.44*/("""
                 <td>6/6/2018</td>
                 <td></td>
                 <td></td>
-                <td><button class="examButton">Take the Exam</button></td>
+                <td>
+                    <button class="examButton">
+                        <a href=""""),_display_(/*64.35*/controllers/*64.46*/.routes.ExamController.exam),format.raw/*64.73*/("""">Take Exam</a>
+                    </button>
+                </td>
             </tr>
             <tr>
                 <td>KM103</td>
@@ -84,7 +95,11 @@ Seq[Any](format.raw/*1.44*/("""
                 <td>2/7/2018</td>
                 <td></td>
                 <td></td>
-                <td><button class="examButton">Take the Exam</button></td>
+                <td>
+                    <button class="examButton">
+                        <a href=""""),_display_(/*76.35*/controllers/*76.46*/.routes.ExamController.exam),format.raw/*76.73*/("""">Take Exam</a>
+                    </button>
+                </td>
             </tr>
         </table>
 
@@ -93,7 +108,7 @@ Seq[Any](format.raw/*1.44*/("""
 
 </div>
 
-"""))
+""")))}))
       }
     }
   }
@@ -113,11 +128,11 @@ Seq[Any](format.raw/*1.44*/("""
 object candidatePortal extends candidatePortal_Scope0.candidatePortal
               /*
                   -- GENERATED --
-                  DATE: Thu Jul 05 09:42:12 BST 2018
-                  SOURCE: /home/kieran/Applications/Apprenticeship/play-scala-starter-example-2.5.x/app/views/candidatePortal.scala.html
-                  HASH: 90c9d62cf6a626c0897ce840dc5e858232345aab
-                  MATRIX: 554->1|691->43|719->45|1147->447|1162->453|1230->499|1531->773|1551->784|1601->813
-                  LINES: 20->1|25->1|27->3|36->12|36->12|36->12|42->18|42->18|42->18
+                  DATE: Mon Jul 09 21:15:23 BST 2018
+                  SOURCE: /Users/Kieran/Documents/Programming/Apprenticeship-Portal/app/views/candidatePortal.scala.html
+                  HASH: acd62d6b4b1ab847ca5d211c81c65c52c70e664c
+                  MATRIX: 554->1|691->43|718->45|774->93|813->95|841->97|1183->413|1203->424|1268->467|1367->539|1382->545|1450->591|1635->749|1655->760|1720->803|1797->853|1817->864|1865->891|1943->942|1963->953|2013->982|2841->1783|2861->1794|2911->1823|3306->2191|3326->2202|3374->2229|3768->2596|3788->2607|3836->2634
+                  LINES: 20->1|25->1|26->2|26->2|26->2|28->4|36->12|36->12|36->12|37->13|37->13|37->13|42->18|42->18|42->18|43->19|43->19|43->19|44->20|44->20|44->20|76->52|76->52|76->52|88->64|88->64|88->64|100->76|100->76|100->76
                   -- GENERATED --
               */
           

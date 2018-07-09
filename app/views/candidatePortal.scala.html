@@ -1,4 +1,5 @@
 @(message: String, style: String = "scala")
+@main("Candidate Portal | Apprenticeship Portal") {
 
 <link rel="stylesheet" media="screen" href="/@@documentation/resources/style/main.css">
 
@@ -9,7 +10,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="@controllers.routes.CandidatePortalController.candidate">
-                        <img id="logo" width="400" height="90" src="@routes.Assets.versioned(" images/Capgemini-Logo.png")">
+                        <img id="logo" width="400" height="90" src="@routes.Assets.versioned("images/Capgemini-Logo.png")">
                     </a>
                 </div>
 
@@ -83,3 +84,4 @@
 
 </div>
 
+}

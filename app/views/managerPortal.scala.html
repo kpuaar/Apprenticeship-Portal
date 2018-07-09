@@ -1,5 +1,5 @@
 @(message: String, style: String = "scala")
-
+@main("Manager Portal | Apprenticeship Portal") {
 <link rel="stylesheet" media="screen" href="/@@documentation/resources/style/main.css">
 
 <section id="top">
@@ -8,13 +8,13 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="@controllers.routes.CandidatePortalController.candidate">
-                        <img id="logo" width="400" height="90" src="@routes.Assets.versioned(" images/Capgemini-Logo.png")">
+                        <img id="logo" width="400" height="90" src="@routes.Assets.versioned("images/Capgemini-Logo.png")">
                     </a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="@controllers.routes.ManagerController.manager">Home</a></li>
-                    <li><a href="@controllers.routes.ManagerController.classes">Classes</a></li>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">Classes</a></li>
                     <li><a href="@controllers.routes.ExamController.exam">Tests</a></li>
                     <li><a href="@controllers.routes.LoginController.login">
                         <span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
@@ -74,3 +74,4 @@
     </article>
 
 </div>
+}

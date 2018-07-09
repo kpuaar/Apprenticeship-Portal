@@ -23,23 +23,25 @@ class managerPortal extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendab
 
 
 Seq[Any](format.raw/*1.44*/("""
+"""),_display_(/*2.2*/main("Manager Portal | Apprenticeship Portal")/*2.48*/ {_display_(Seq[Any](format.raw/*2.50*/("""
+"""),format.raw/*3.1*/("""<link rel="stylesheet" media="screen" href="/@documentation/resources/style/main.css">
 
-"""),format.raw/*3.1*/("""<section id="top">
+<section id="top">
     <div class="wrapper">
-        <img src="images/Capgemini-Logo.png" width="200" height="100">
-
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">capgemini logo</a>
-                    <img src="images/Capgemini-Logo.png" width="200" height="100">
+                    <a class="navbar-brand" href=""""),_display_(/*10.52*/controllers/*10.63*/.routes.CandidatePortalController.candidate),format.raw/*10.106*/("""">
+                        <img id="logo" width="400" height="90" src=""""),_display_(/*11.70*/routes/*11.76*/.Assets.versioned("images/Capgemini-Logo.png")),format.raw/*11.122*/("""">
+                    </a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="managerPortal.scala.html">Home</a></li>
-                    <li><a href="classes.scala.html">Classes</a></li>
-                    <li><a href="tests.scala.html">Tests</a></li>
-                    <li><a href="login.scala.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">Classes</a></li>
+                    <li><a href=""""),_display_(/*18.35*/controllers/*18.46*/.routes.ExamController.exam),format.raw/*18.73*/("""">Tests</a></li>
+                    <li><a href=""""),_display_(/*19.35*/controllers/*19.46*/.routes.LoginController.login),format.raw/*19.75*/("""">
+                        <span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
                 </ul>
             </div>
         </nav>
@@ -93,17 +95,10 @@ Seq[Any](format.raw/*1.44*/("""
             </tr>
         </table>
 
-        <pre><code>@(message: String)
-
-@main("Welcome to Play") """),format.raw/*74.27*/("""{"""),format.raw/*74.28*/("""
-
-    """),format.raw/*76.5*/("""@welcome(message, style = "scala")
-
-"""),format.raw/*78.1*/("""}"""),format.raw/*78.2*/("""</code></pre>
-
     </article>
 
-</div>"""))
+</div>
+""")))}))
       }
     }
   }
@@ -123,11 +118,11 @@ Seq[Any](format.raw/*1.44*/("""
 object managerPortal extends managerPortal_Scope0.managerPortal
               /*
                   -- GENERATED --
-                  DATE: Thu Jul 05 09:42:12 BST 2018
-                  SOURCE: /home/kieran/Applications/Apprenticeship/play-scala-starter-example-2.5.x/app/views/managerPortal.scala.html
-                  HASH: 2a330791a6d51bdb5fc8f115cd3b0df62db5b48a
-                  MATRIX: 550->1|687->43|715->45|3073->2377|3102->2378|3135->2384|3198->2421|3226->2422
-                  LINES: 20->1|25->1|27->3|98->74|98->74|100->76|102->78|102->78
+                  DATE: Mon Jul 09 21:15:23 BST 2018
+                  SOURCE: /Users/Kieran/Documents/Programming/Apprenticeship-Portal/app/views/managerPortal.scala.html
+                  HASH: 715df32443541c7fd941db3c81a67eb5ae2b236a
+                  MATRIX: 550->1|687->43|714->45|768->91|807->93|834->94|1175->409|1195->420|1260->463|1359->535|1374->541|1442->587|1728->846|1748->857|1796->884|1874->935|1894->946|1944->975
+                  LINES: 20->1|25->1|26->2|26->2|26->2|27->3|34->10|34->10|34->10|35->11|35->11|35->11|42->18|42->18|42->18|43->19|43->19|43->19
                   -- GENERATED --
               */
           

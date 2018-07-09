@@ -23,37 +23,33 @@ class login extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Forma
 
 
 Seq[Any](format.raw/*1.44*/("""
+"""),_display_(/*2.2*/main("Login | Apprenticeship Portal")/*2.39*/ {_display_(Seq[Any](format.raw/*2.41*/("""
+    """),format.raw/*3.5*/("""<link rel="stylesheet" media="screen" href="/@documentation/resources/style/main.css">
 
-"""),format.raw/*3.1*/("""<section id="top">
-
-    <div class="wrapper">
-        <img src="images/Capgemini-Logo.png" width="200" height="100">
+    <section id="top">
+        <div class="wrapper">
+            <img id="logo" width="400" height="90" src=""""),_display_(/*7.58*/routes/*7.64*/.Assets.versioned("images/Capgemini-Logo.png")),format.raw/*7.110*/("""">
+        </div>
+    </section>
+    
+    <div id="content" class="wrapper doc">
+        <article>
+    
+            <h1>Sign in</h1>
+            <p>
+                <input type="username" name="username" placeholder="Username">
+            </p>
+            <p>
+                <input type="password" name="password" placeholder="Password">
+            </p>
+            <p>
+                <button type="submit">Login</button>
+            </p>
+    
+        </article>
+    
     </div>
-
-</section>
-
-<div id="content" class="wrapper doc">
-
-    <article>
-
-        <h1>Sign in</h1>
-
-        <p>
-            <input type="username" name="username" placeholder="Username">
-        </p>
-
-        <p>
-            <input type="password" name="password" placeholder="Password">
-        </p>
-
-        <p>
-            <button type="submit">Login</button>
-        </p>
-
-    </article>
-
-</div>
-"""))
+""")))}))
       }
     }
   }
@@ -73,11 +69,11 @@ Seq[Any](format.raw/*1.44*/("""
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Thu Jul 05 09:42:12 BST 2018
-                  SOURCE: /home/kieran/Applications/Apprenticeship/play-scala-starter-example-2.5.x/app/views/login.scala.html
-                  HASH: 9a30bad358cf8180ce9e9a7a5c8abe16a23b40c7
-                  MATRIX: 534->1|671->43|699->45
-                  LINES: 20->1|25->1|27->3
+                  DATE: Mon Jul 09 21:14:27 BST 2018
+                  SOURCE: /Users/Kieran/Documents/Programming/Apprenticeship-Portal/app/views/login.scala.html
+                  HASH: 23c0f5a191b1b3619bfd3a5d7b15e699500e46c7
+                  MATRIX: 534->1|671->43|698->45|743->82|782->84|813->89|1037->288|1051->294|1118->340
+                  LINES: 20->1|25->1|26->2|26->2|26->2|27->3|31->7|31->7|31->7
                   -- GENERATED --
               */
           
